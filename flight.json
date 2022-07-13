@@ -1,0 +1,9 @@
+{
+    "appium:platformName": "android",
+    "platformVersion": "9",
+    "deviceName": "emulator-5554",
+    "automationName": "UiAutomator2",
+    "newCommandTimeOut": "2500",
+    "appActivity": "com.example.myapplication.MainActivity ",
+    "appPackage": "com.example.myapplication"
+  }

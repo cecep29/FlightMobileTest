@@ -1,0 +1,7 @@
+logo: id=com.example.myapplication:id/imageView4
+sign_in_btn: id=com.example.myapplication:id/login
+book_btn: id=com.example.myapplication:id/button5
+#search_btn: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Button[3]
+search_btn: class=android.widget.Button
+checkIn_btn: xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Button[4]
+home_image: id=com.example.myapplication:id/imageView

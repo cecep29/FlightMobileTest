@@ -1,0 +1,27 @@
+book_tab_btn: id=com.example.myapplication:id/book
+from_city_dropdown: xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.Spinner[1]/android.widget.TextView
+new_york: xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]
+chicago: xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]
+toronto: xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[3]
+to_city_dropdown: xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.Spinner[2]/android.widget.TextView
+london: xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]
+paris: xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]
+ottawa: xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[3]
+class_dropdown: xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.Spinner[3]/android.widget.TextView
+economy: xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]
+first: xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]
+bisnis: xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[3]
+start_date_btn: id=com.example.myapplication:id/textStartDate
+tgl_1: xpath=//android.view.View[@content-desc="01 August 2019"]
+ok_btn_start: id=android:id/button1
+end_date_btn: id=com.example.myapplication:id/textEndDate
+tgl_2: xpath=//android.view.View[@content-desc="02 August 2019"]
+ok_btn_end: id=android:id/button1
+radio_btn_flight: id=com.example.myapplication:id/radioButtonFlight
+radio_btn_fligt_hotel: id=com.example.myapplication:id/radioButtonFlightHotel
+checkbox_day: id=com.example.myapplication:id/checkBoxDay
+book_btn: id=com.example.myapplication:id/book_flight
+price_1: id=com.example.myapplication:id/price1
+confirm_btn: id=com.example.myapplication:id/confirm_order
+btn_tgl_confirm_1: xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TableLayout/android.widget.TableRow[2]/android.widget.Button[1]
+fligt_book_message: id=com.example.myapplication:id/checkedTextView

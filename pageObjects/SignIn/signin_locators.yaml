@@ -1,0 +1,5 @@
+input_username: id=com.example.myapplication:id/username
+input_password: id=com.example.myapplication:id/password
+sign_in_btn: id=com.example.myapplication:id/login
+login_btn: id=com.example.myapplication:id/signIn
+text_ngendigital: id=com.example.myapplication:id/textView
