@@ -10,7 +10,7 @@ Pengetesan Flight App yaitu aplikasi booking tiket pesawat berbasi Android denga
 Sebelum menjalan test aplikasi, pastikan **python sudah terinstall**.
 Install python silahkan download [python](https://www.python.org/downloads/) 
 
-Cek versi python, ketik ` python -V` pada terminal Anda.
+Cek versi python, ketik `python3 -V` pada terminal Anda.
 
 ## Install Robot Framework Appium Library
 ketikan di terminal/cmd `pip install --upgrade robotframework-appiumlibrary`
