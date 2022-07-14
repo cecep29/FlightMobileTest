@@ -1,8 +1,8 @@
 # FlightMobileTest
 
-Ini adalah sebuah test pada aplikasi berbasis android menggunakan [Robot Framework](https://robotframework.org/) dan [Appium Library](https://github.com/serhatbolsu/robotframework-appiumlibrary).
+Test pada aplikasi berbasis android menggunakan [Robot Framework](https://robotframework.org/) dan [Appium Library](https://github.com/serhatbolsu/robotframework-appiumlibrary).
 
-Pengetesan Flight App yaitu aplikasi booking tiket pesawat berbasi Android dengan automation.
+Pengetesan Flight App yaitu aplikasi booking tiket pesawat berbasis Android secara automation.
 
 [![fligtApp.png](https://i.postimg.cc/Sx5LctGz/fligtApp.png)](https://postimg.cc/3kXDT1VK)
 
