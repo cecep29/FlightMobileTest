@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220713 20:09:07.551" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220714 21:03:21.361" rpa="false" schemaversion="3">
 <suite id="s1" name="SignIn" source="/home/cecep/Developments/dojobox/FlightAppMobile/test_suites/SignIn.robot">
 <kw name="Open App" library="base" type="SETUP">
 <kw name="Open Application" library="AppiumLibrary">
@@ -17,59 +17,59 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220713 20:09:07.749" endtime="20220713 20:09:16.698"/>
+<status status="PASS" starttime="20220714 21:03:21.526" endtime="20220714 21:03:30.841"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:07.748" endtime="20220713 20:09:16.699"/>
+<status status="PASS" starttime="20220714 21:03:21.525" endtime="20220714 21:03:30.841"/>
 </kw>
-<test id="s1-t1" name="Verify Sign In Button On HomeScreen" line="9">
+<test id="s1-t1" name="Verify Sign In Button On HomeScreen" line="8">
 <kw name="Verify Sign In Button Appears" library="signin_keywords">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>locator=${sign_in_btn}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:09:16.702" endtime="20220713 20:09:16.926"/>
+<status status="PASS" starttime="20220714 21:03:30.856" endtime="20220714 21:03:31.144"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:16.701" endtime="20220713 20:09:16.927"/>
+<status status="PASS" starttime="20220714 21:03:30.850" endtime="20220714 21:03:31.145"/>
 </kw>
 <kw name="Tap Sign In Button" library="signin_keywords">
 <kw name="Tap" library="AppiumLibrary">
 <arg>locator=${sign_in_btn}</arg>
 <doc>Tap element identified by ``locator``. </doc>
-<status status="PASS" starttime="20220713 20:09:16.928" endtime="20220713 20:09:17.328"/>
+<status status="PASS" starttime="20220714 21:03:31.146" endtime="20220714 21:03:31.692"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:16.927" endtime="20220713 20:09:17.328"/>
+<status status="PASS" starttime="20220714 21:03:31.145" endtime="20220714 21:03:31.692"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:16.699" endtime="20220713 20:09:17.329"/>
+<status status="PASS" starttime="20220714 21:03:30.842" endtime="20220714 21:03:31.693"/>
 </test>
-<test id="s1-t2" name="Verify Sign In Screen" line="13">
+<test id="s1-t2" name="Verify Sign In Screen" line="12">
 <kw name="Verify Input Username Appears" library="signin_keywords">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>locator=${input_username}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:09:17.334" endtime="20220713 20:09:18.500"/>
+<status status="PASS" starttime="20220714 21:03:31.696" endtime="20220714 21:03:32.767"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:17.333" endtime="20220713 20:09:18.500"/>
+<status status="PASS" starttime="20220714 21:03:31.695" endtime="20220714 21:03:32.767"/>
 </kw>
 <kw name="Verify Input Password Appears" library="signin_keywords">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>locator=${input_password}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:09:18.502" endtime="20220713 20:09:18.620"/>
+<status status="PASS" starttime="20220714 21:03:32.768" endtime="20220714 21:03:32.853"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:18.501" endtime="20220713 20:09:18.621"/>
+<status status="PASS" starttime="20220714 21:03:32.767" endtime="20220714 21:03:32.854"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:17.331" endtime="20220713 20:09:18.621"/>
+<status status="PASS" starttime="20220714 21:03:31.694" endtime="20220714 21:03:32.854"/>
 </test>
-<test id="s1-t3" name="User can sign in" line="17">
+<test id="s1-t3" name="User can sign in" line="16">
 <kw name="Input Username" library="signin_keywords">
 <arg>username=support@ngendigital.com</arg>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>locator=${input_username}</arg>
 <arg>text=${username}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220713 20:09:18.635" level="INFO">Typing text 'support@ngendigital.com' into text field 'id=com.example.myapplication:id/username'</msg>
-<status status="PASS" starttime="20220713 20:09:18.626" endtime="20220713 20:09:18.775"/>
+<msg timestamp="20220714 21:03:32.859" level="INFO">Typing text 'support@ngendigital.com' into text field 'id=com.example.myapplication:id/username'</msg>
+<status status="PASS" starttime="20220714 21:03:32.856" endtime="20220714 21:03:33.033"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:18.623" endtime="20220713 20:09:18.776"/>
+<status status="PASS" starttime="20220714 21:03:32.855" endtime="20220714 21:03:33.033"/>
 </kw>
 <kw name="Input Password" library="signin_keywords">
 <arg>password=abc123</arg>
@@ -77,45 +77,45 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>locator=${input_password}</arg>
 <arg>text=${password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220713 20:09:18.788" level="INFO">Typing text 'abc123' into text field 'id=com.example.myapplication:id/password'</msg>
-<status status="PASS" starttime="20220713 20:09:18.777" endtime="20220713 20:09:19.333"/>
+<msg timestamp="20220714 21:03:33.040" level="INFO">Typing text 'abc123' into text field 'id=com.example.myapplication:id/password'</msg>
+<status status="PASS" starttime="20220714 21:03:33.035" endtime="20220714 21:03:33.606"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:18.776" endtime="20220713 20:09:19.334"/>
+<status status="PASS" starttime="20220714 21:03:33.034" endtime="20220714 21:03:33.606"/>
 </kw>
 <kw name="Tap Login Button" library="signin_keywords">
 <kw name="Tap" library="AppiumLibrary">
 <arg>locator=${login_btn}</arg>
 <doc>Tap element identified by ``locator``. </doc>
-<status status="PASS" starttime="20220713 20:09:19.335" endtime="20220713 20:09:20.041"/>
+<status status="PASS" starttime="20220714 21:03:33.607" endtime="20220714 21:03:34.319"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:19.334" endtime="20220713 20:09:20.041"/>
+<status status="PASS" starttime="20220714 21:03:33.607" endtime="20220714 21:03:34.319"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:18.622" endtime="20220713 20:09:20.042"/>
+<status status="PASS" starttime="20220714 21:03:32.855" endtime="20220714 21:03:34.320"/>
 </test>
-<test id="s1-t4" name="Veriy User has been logged" line="22">
+<test id="s1-t4" name="Veriy User has been logged" line="21">
 <kw name="Verify Logout Button Appears" library="signin_keywords">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>locator=${sign_in_btn}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:09:20.046" endtime="20220713 20:09:20.888"/>
+<status status="PASS" starttime="20220714 21:03:34.323" endtime="20220714 21:03:35.138"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:20.045" endtime="20220713 20:09:20.888"/>
+<status status="PASS" starttime="20220714 21:03:34.322" endtime="20220714 21:03:35.138"/>
 </kw>
 <kw name="Verify Ngen Digital Text Appears" library="signin_keywords">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>locator=${text_ngendigital}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:09:20.889" endtime="20220713 20:09:20.961"/>
+<status status="PASS" starttime="20220714 21:03:35.139" endtime="20220714 21:03:35.215"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:20.888" endtime="20220713 20:09:20.962"/>
+<status status="PASS" starttime="20220714 21:03:35.139" endtime="20220714 21:03:35.215"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:20.043" endtime="20220713 20:09:20.962"/>
+<status status="PASS" starttime="20220714 21:03:34.321" endtime="20220714 21:03:35.216"/>
 </test>
 <kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220713 20:09:20.965" endtime="20220713 20:09:22.190"/>
+<status status="PASS" starttime="20220714 21:03:35.217" endtime="20220714 21:03:36.399"/>
 </kw>
-<status status="PASS" starttime="20220713 20:09:07.552" endtime="20220713 20:09:22.191"/>
+<status status="PASS" starttime="20220714 21:03:21.364" endtime="20220714 21:03:36.399"/>
 </suite>
 <statistics>
 <total>

@@ -3,15 +3,6 @@ Variables               book_locators.yaml
 
 
 *** Keywords ***
-User Login 
-    signin_keywords.Verify Sign In Button Appears
-    signin_keywords.Tap Sign In Button 
-    signin_keywords.Verify Input Username Appears
-    signin_keywords.Input Username                          support@ngendigital.com
-    signin_keywords.Verify Input Password Appears
-    signin_keywords.Input Password                          abc123
-    signin_keywords.Tap Login Button
-
 Tap Book Tab Button 
     Wait Until Element Is Visible       locator=${book_tab_btn}
     Tap                                 locator=${book_tab_btn}

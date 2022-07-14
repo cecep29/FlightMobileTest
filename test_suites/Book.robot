@@ -1,15 +1,13 @@
 *** Settings ***
-Library             AppiumLibrary
 Resource            ../pageObjects/SignIn/signin_keywords.robot
 Resource            ../pageObjects/Book/book_keywords.robot
+Resource            ../pageObjects/SignIn/signin_keywords.robot
 Resource            ../base.robot
-Suite Setup          base.Open App 
+Suite Setup     Run Keywords    base.Open App
+...             AND             User Login With Valid Data 
 Suite Teardown       Close Application
 
 *** Test Cases ***
-User Login Before Booking a Flight
-    User Login 
-
 User Should Be Able Booking a Flight 
     Tap Book Tab Button 
     Select From City 

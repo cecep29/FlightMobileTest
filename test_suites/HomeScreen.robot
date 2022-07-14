@@ -1,5 +1,4 @@
 *** Settings ***
-Library             AppiumLibrary
 Resource            ../pageObjects/HomeScreen/homescreen_keywords.robot
 Resource            ../base.robot
 Test Setup          base.Open App 

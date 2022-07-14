@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220713 20:10:00.724" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220714 21:19:19.931" rpa="false" schemaversion="3">
 <suite id="s1" name="SearchFlight" source="/home/cecep/Developments/dojobox/FlightAppMobile/test_suites/SearchFlight.robot">
-<kw name="Open App" library="base" type="SETUP">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>base.Open App</arg>
+<arg>AND</arg>
+<arg>User Login With Valid Data</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Open App" library="base">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>${URL}</arg>
 <arg>platformName=${PLATFORM}</arg>
@@ -17,178 +22,107 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220713 20:10:00.922" endtime="20220713 20:10:12.185"/>
+<status status="PASS" starttime="20220714 21:19:20.092" endtime="20220714 21:19:28.411"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:00.921" endtime="20220713 20:10:12.186"/>
+<status status="PASS" starttime="20220714 21:19:20.090" endtime="20220714 21:19:28.411"/>
 </kw>
-<test id="s1-t1" name="User Should Be Able Search Flight Number" line="10">
-<kw name="User login" library="search_keywords">
-<kw name="Verify Sign In Button Appears" library="signin_keywords">
+<kw name="User Login With Valid Data" library="signin_keywords">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>locator=${sign_in_btn}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:10:12.194" endtime="20220713 20:10:12.479"/>
+<status status="PASS" starttime="20220714 21:19:28.416" endtime="20220714 21:19:28.814"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:12.193" endtime="20220713 20:10:12.479"/>
-</kw>
-<kw name="Tap Sign In Button" library="signin_keywords">
 <kw name="Tap" library="AppiumLibrary">
 <arg>locator=${sign_in_btn}</arg>
 <doc>Tap element identified by ``locator``. </doc>
-<status status="PASS" starttime="20220713 20:10:12.480" endtime="20220713 20:10:13.264"/>
+<status status="PASS" starttime="20220714 21:19:28.814" endtime="20220714 21:19:29.117"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:12.479" endtime="20220713 20:10:13.264"/>
-</kw>
-<kw name="Verify Input Username Appears" library="signin_keywords">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>locator=${input_username}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:10:13.265" endtime="20220713 20:10:14.311"/>
+<status status="PASS" starttime="20220714 21:19:29.117" endtime="20220714 21:19:30.008"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:13.265" endtime="20220713 20:10:14.312"/>
-</kw>
-<kw name="Input Username" library="signin_keywords">
-<arg>support@ngendigital.com</arg>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>locator=${input_username}</arg>
-<arg>text=${username}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220713 20:10:14.319" level="INFO">Typing text 'support@ngendigital.com' into text field 'id=com.example.myapplication:id/username'</msg>
-<status status="PASS" starttime="20220713 20:10:14.313" endtime="20220713 20:10:14.500"/>
-</kw>
-<status status="PASS" starttime="20220713 20:10:14.312" endtime="20220713 20:10:14.500"/>
-</kw>
-<kw name="Verify Input Password Appears" library="signin_keywords">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>locator=${input_password}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:10:14.501" endtime="20220713 20:10:15.027"/>
+<status status="PASS" starttime="20220714 21:19:30.009" endtime="20220714 21:19:30.074"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:14.501" endtime="20220713 20:10:15.027"/>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>locator=${input_username}</arg>
+<arg>text=support@ngendigital.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220714 21:19:30.077" level="INFO">Typing text 'support@ngendigital.com' into text field 'id=com.example.myapplication:id/username'</msg>
+<status status="PASS" starttime="20220714 21:19:30.074" endtime="20220714 21:19:30.164"/>
 </kw>
-<kw name="Input Password" library="signin_keywords">
-<arg>abc123</arg>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>locator=${input_password}</arg>
-<arg>text=${password}</arg>
+<arg>text=abc123</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220713 20:10:15.038" level="INFO">Typing text 'abc123' into text field 'id=com.example.myapplication:id/password'</msg>
-<status status="PASS" starttime="20220713 20:10:15.032" endtime="20220713 20:10:15.156"/>
+<msg timestamp="20220714 21:19:30.169" level="INFO">Typing text 'abc123' into text field 'id=com.example.myapplication:id/password'</msg>
+<status status="PASS" starttime="20220714 21:19:30.164" endtime="20220714 21:19:30.733"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:15.031" endtime="20220713 20:10:15.156"/>
-</kw>
-<kw name="Tap Login Button" library="signin_keywords">
 <kw name="Tap" library="AppiumLibrary">
 <arg>locator=${login_btn}</arg>
 <doc>Tap element identified by ``locator``. </doc>
-<status status="PASS" starttime="20220713 20:10:15.158" endtime="20220713 20:10:15.918"/>
+<status status="PASS" starttime="20220714 21:19:30.733" endtime="20220714 21:19:31.445"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:15.157" endtime="20220713 20:10:15.918"/>
+<status status="PASS" starttime="20220714 21:19:28.415" endtime="20220714 21:19:31.445"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:12.192" endtime="20220713 20:10:15.918"/>
+<status status="PASS" starttime="20220714 21:19:20.090" endtime="20220714 21:19:31.445"/>
 </kw>
-<kw name="Tap Search Tab" library="search_keywords">
-<kw name="Tap" library="AppiumLibrary">
-<arg>locator=${search_tab_btn}</arg>
-<doc>Tap element identified by ``locator``. </doc>
-<status status="PASS" starttime="20220713 20:10:15.920" endtime="20220713 20:10:17.885"/>
+<test id="s1-t1" name="User Should Be Able Search Flight Number" line="12">
+<kw name="Tap Search Tab">
+<msg timestamp="20220714 21:19:31.455" level="FAIL">No keyword with name 'Tap Search Tab' found. Did you try using keyword 'AppiumLibrary.Tap' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20220714 21:19:31.455" endtime="20220714 21:19:31.455"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:15.919" endtime="20220713 20:10:17.886"/>
+<kw name="Verfiy Input Flight Number Appears">
+<status status="NOT RUN" starttime="20220714 21:19:31.464" endtime="20220714 21:19:31.464"/>
 </kw>
-<kw name="Verfiy Input Flight Number Appears" library="search_keywords">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>locator=${enter_flight_text}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:10:17.886" endtime="20220713 20:10:19.182"/>
-</kw>
-<status status="PASS" starttime="20220713 20:10:17.886" endtime="20220713 20:10:19.183"/>
-</kw>
-<kw name="Input Flight Number" library="search_keywords">
+<kw name="Input Flight Number">
 <arg>flight_no=DA935</arg>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>locator=${input_flight_no}</arg>
-<arg>text=${flight_no}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220713 20:10:19.189" level="INFO">Typing text 'DA935' into text field 'id=com.example.myapplication:id/flight_number'</msg>
-<status status="PASS" starttime="20220713 20:10:19.183" endtime="20220713 20:10:19.303"/>
+<status status="NOT RUN" starttime="20220714 21:19:31.471" endtime="20220714 21:19:31.471"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:19.183" endtime="20220713 20:10:19.304"/>
+<kw name="Tap Search Button">
+<status status="NOT RUN" starttime="20220714 21:19:31.479" endtime="20220714 21:19:31.479"/>
 </kw>
-<kw name="Tap Search Button" library="search_keywords">
-<kw name="Tap" library="AppiumLibrary">
-<arg>locator=${search_btn}</arg>
-<doc>Tap element identified by ``locator``. </doc>
-<status status="PASS" starttime="20220713 20:10:19.305" endtime="20220713 20:10:20.045"/>
-</kw>
-<status status="PASS" starttime="20220713 20:10:19.304" endtime="20220713 20:10:20.045"/>
-</kw>
-<status status="PASS" starttime="20220713 20:10:12.187" endtime="20220713 20:10:20.046"/>
+<status status="FAIL" starttime="20220714 21:19:31.446" endtime="20220714 21:19:31.480">No keyword with name 'Tap Search Tab' found. Did you try using keyword 'AppiumLibrary.Tap' and forgot to use enough whitespace between keyword and arguments?</status>
 </test>
-<test id="s1-t2" name="Verfiy users get information about flights according to flight number" line="17">
-<kw name="Verify Destination Appears" library="search_keywords">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>locator=${destination_text}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:10:20.053" endtime="20220713 20:10:20.989"/>
+<test id="s1-t2" name="Verfiy users get information about flights according to flight number" line="19">
+<kw name="Verify Destination Appears">
+<msg timestamp="20220714 21:19:31.490" level="FAIL">No keyword with name 'Verify Destination Appears' found.</msg>
+<status status="FAIL" starttime="20220714 21:19:31.490" endtime="20220714 21:19:31.490"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:20.052" endtime="20220713 20:10:20.990"/>
+<kw name="Verify Schedule Appears">
+<status status="NOT RUN" starttime="20220714 21:19:31.498" endtime="20220714 21:19:31.498"/>
 </kw>
-<kw name="Verify Schedule Appears" library="search_keywords">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>locator=${schedule_text}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:10:20.992" endtime="20220713 20:10:21.287"/>
+<kw name="Verify Departed Appears">
+<status status="NOT RUN" starttime="20220714 21:19:31.512" endtime="20220714 21:19:31.512"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:20.991" endtime="20220713 20:10:21.287"/>
+<kw name="Verify Flight Number Appears">
+<status status="NOT RUN" starttime="20220714 21:19:31.521" endtime="20220714 21:19:31.521"/>
 </kw>
-<kw name="Verify Departed Appears" library="search_keywords">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>locator=${departed_text}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:10:21.289" endtime="20220713 20:10:21.491"/>
+<kw name="Verify Schedule Value Appears">
+<status status="NOT RUN" starttime="20220714 21:19:31.530" endtime="20220714 21:19:31.530"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:21.288" endtime="20220713 20:10:21.491"/>
+<kw name="Verify Departed Value Appears">
+<status status="NOT RUN" starttime="20220714 21:19:31.539" endtime="20220714 21:19:31.539"/>
 </kw>
-<kw name="Verify Flight Number Appears" library="search_keywords">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>locator=${flight_no}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:10:21.492" endtime="20220713 20:10:21.684"/>
-</kw>
-<status status="PASS" starttime="20220713 20:10:21.491" endtime="20220713 20:10:21.685"/>
-</kw>
-<kw name="Verify Schedule Value Appears" library="search_keywords">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>locator=${schedule_value}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:10:21.685" endtime="20220713 20:10:21.981"/>
-</kw>
-<status status="PASS" starttime="20220713 20:10:21.685" endtime="20220713 20:10:21.982"/>
-</kw>
-<kw name="Verify Departed Value Appears" library="search_keywords">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>locator=${departed_value}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220713 20:10:21.983" endtime="20220713 20:10:22.355"/>
-</kw>
-<status status="PASS" starttime="20220713 20:10:21.982" endtime="20220713 20:10:22.355"/>
-</kw>
-<status status="PASS" starttime="20220713 20:10:20.047" endtime="20220713 20:10:22.356"/>
+<status status="FAIL" starttime="20220714 21:19:31.481" endtime="20220714 21:19:31.541">No keyword with name 'Verify Destination Appears' found.</status>
 </test>
 <kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220713 20:10:22.358" endtime="20220713 20:10:25.589"/>
+<status status="PASS" starttime="20220714 21:19:31.548" endtime="20220714 21:19:32.510"/>
 </kw>
-<status status="PASS" starttime="20220713 20:10:00.726" endtime="20220713 20:10:25.589"/>
+<status status="FAIL" starttime="20220714 21:19:19.932" endtime="20220714 21:19:32.510"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="SearchFlight">SearchFlight</stat>
+<stat pass="0" fail="2" skip="0" id="s1" name="SearchFlight">SearchFlight</stat>
 </suite>
 </statistics>
 <errors>

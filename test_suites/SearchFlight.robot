@@ -1,14 +1,14 @@
 *** Settings ***
-Library             AppiumLibrary
 Resource            ../pageObjects/SignIn/signin_keywords.robot
 Resource            ../pageObjects/SearchFlight/search_keywords.robot
+Resource            ../pageObjects/SignIn/signin_keywords.robot
 Resource            ../base.robot
-Suite Setup          base.Open App 
+Suite Setup     Run Keywords    base.Open App
+...             AND             User Login With Valid Data  
 Suite Teardown       Close Application
 
 *** Test Cases ***
 User Should Be Able Search Flight Number 
-    User login 
     Tap Search Tab    
     Verfiy Input Flight Number Appears          
     Input Flight Number                     flight_no=DA935 

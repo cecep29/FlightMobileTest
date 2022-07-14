@@ -2,14 +2,14 @@
 Variables           search_locators.yaml
 
 *** Keywords ***
-User login 
-    signin_keywords.Verify Sign In Button Appears
-    signin_keywords.Tap Sign In Button 
-    signin_keywords.Verify Input Username Appears
-    signin_keywords.Input Username                          support@ngendigital.com
-    signin_keywords.Verify Input Password Appears
-    signin_keywords.Input Password                          abc123
-    signin_keywords.Tap Login Button
+# User login 
+#     signin_keywords.Verify Sign In Button Appears
+#     signin_keywords.Tap Sign In Button 
+#     signin_keywords.Verify Input Username Appears
+#     signin_keywords.Input Username                          support@ngendigital.com
+#     signin_keywords.Verify Input Password Appears
+#     signin_keywords.Input Password                          abc123
+#     signin_keywords.Tap Login Button
 
 Tap Search Tab 
    Tap                                      locator=${search_tab_btn}

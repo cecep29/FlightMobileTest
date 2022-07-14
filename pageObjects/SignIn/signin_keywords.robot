@@ -31,3 +31,13 @@ Verify Logout Button Appears
     
 Verify Ngen Digital Text Appears
     Wait Until Element Is Visible           locator=${text_ngendigital}          
+
+
+User Login With Valid Data 
+    Wait Until Element Is Visible           locator=${sign_in_btn} 
+    Tap                                     locator=${sign_in_btn} 
+    Wait Until Element Is Visible           locator=${input_username}
+    Wait Until Element Is Visible           locator=${input_password}
+    Input Text                              locator=${input_username}           text=support@ngendigital.com
+    Input Text                              locator=${input_password}           text=abc123
+    Tap                                     locator=${login_btn}

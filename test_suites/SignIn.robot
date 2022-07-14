@@ -1,5 +1,4 @@
 *** Settings ***
-Library             AppiumLibrary
 Resource            ../pageObjects/SignIn/signin_keywords.robot
 Resource            ../base.robot
 Suite Setup          base.Open App 
@@ -19,6 +18,7 @@ User can sign in
     Input Password              password=abc123
     Tap Login Button
 
-Veriy User has been logged
+Verify User has been logged
     Verify Logout Button Appears
     Verify Ngen Digital Text Appears
+
